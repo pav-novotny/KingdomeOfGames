@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Pavel Novotny">
+    <link href="css/main_style_PNo555.css" rel="stylesheet">
+    <link href="css/form_PNo555.css" rel="stylesheet">
+    <script src="script/form_validation_PNo555.js" defer></script>
+    <title>Main Page</title>
+</head>
+<body>
+    <header>
+        <h1>The Kingdom Of Games</h1>
+        <p>
+            This story goes back to the 2000s in my home country, the Czech Republic. Many families had a popular board game collection called Kingdom of Games.<br>
+            This site is meant to recreate two of my favorite games from that collection, which I used to play with my grandparents.
+        </p>
+        <hr>
+    </header>
+    <section id="navigation">
+        <a href="index.html" class="hover">Main Menu</a>
+        <a href="Page2_PNo555.html" class="hover">Worms</a>
+        <a href="Page3_PNo555.html" class="hover">Geese</a>
+    </section>
+    <article id="game_description">
+        <div>
+            <h3>Game 1: Žížaly (Worms)</h3>
+            <div>
+                <p>
+                    Worms (an adaptation of snakes and ladder) are played with one 6 sided die. The winner is who reach the goal first. You may encounter ladders, which makes your way
+                    to the goal faster. Be careful though, there are evil worms on the way, which will set you back!!
+                    <iframe src="https://www.youtube.com/embed/gWz0IYqSDtk?si=VzzWVABWdfs7f91x" width="300" height="100" allowfullscreen></iframe>
+                </p>
+                <img src="images/Zizaly.jpg" alt="Worms Image">
+            </div>
+           
+        </div>
+        <div>
+            <h3>Game 2: Husičky (Geese)</h3>
+            <div>
+                <p>
+                    Geese are played with one 6 sided die. Help the goose to reach the goal first. However, the path is not straightforward. Some tiles can 
+                    help you to achieve to goal faster. Some may slow you down!!
+                </p>
+                <img src="images/Husicky.png" alt="Geese Image">
+            </div>
+        </div>
+    </article>
+    <section id="formSection">
+        <form id="form" method="get">
+            <fieldset>
+                <legend>Game Settings</legend>
+                <div>
+                    <label for="playerName">Player's Name:</label>
+                    <input type="text" name="playerName" id="playerName" placeholder="Player1" value="" maxlength="15" required>
+                </div>
+                <div>
+                    <label>Game:</label>
+                    <span>
+                        <input type="radio" name="game" id="gameWorms" value="worms" checked>Žížaly (Worms)
+                        <input type="radio" name="game" id="gameGeese" value="geese">Husičky (Geese)
+                    </span> 
+                </div>
+                <div>
+                    <div>
+                        <label for="playerDie">Player's Die:</label>
+                        <select name="playerDie" id="playerDie" required>
+                            <option value="normalDie">A Balanced Die</option>
+                            <option value="badLuckDie">A Die Of Bad Luck</option>
+                            <option value="goodLuckDie">A Die Of A Lucky Player</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="opponentDie">Opponent's Die:</label>
+                        <select name="opponentDie" id="opponentDie" required>
+                            <option value="normalDie">A Balanced Die</option>
+                            <option value="badLuckDie">A Die Of Bad Luck</option>
+                            <option value="goodLuckDie">A Die Of A Lucky Player</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="playerColor">Player's Color:</label>
+                        <select name="playerColor" id="playerColor" required>
+                            <option value="blue">Blue</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="opponentColor">Opponent's Color:</label>
+                        <select name="opponentColor" id="opponentColor" required>
+                            <option value="blue">Blue</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="gameSpeed">Game Speed</label>
+                    <input type="number" name="gameSpeed" id="gameSpeed" min="1" max="5" value="3" required>
+                </div>
+                <div>
+                    <input type="button" name="sumbit" value="Play!" id="submit">
+                    <input type="reset" name="Clear" id="clear">
+                </div>
+            </fieldset>
+        </form>
+        <article>
+            <p id="formExplain"></p>
+        </article>
+    </section>
+</body>
+</html>

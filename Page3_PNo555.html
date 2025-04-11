@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Pavel Novotny">
+    <link href="css/main_style_PNo555.css" rel="stylesheet">
+    <link href="css/games_PNo555.css" rel="stylesheet">
+    <link href="css/geese_PNo555.css" rel="stylesheet">
+    <script src="script/games_PNo555.js" defer></script>
+    <script src="script/geese_PNo555.js" defer></script>
+    <title>Geese</title>
+</head>
+<body>
+    <header>
+    </header>
+    <section id="navigation">
+        <a href="index.html" class="hover">Main Menu</a>
+        <a href="Page2_PNo555.html" class="hover">Worms</a>
+        <a href="Page3_PNo555.html" class="hover">Geese</a>
+    </section>
+    <hr>
+    <section id="game_section">
+        <div id="actions">
+            <button id="restart">Restart</button>
+            <span id="wrap_player_roll">
+                <img id="player_roll" src="images/die6.png" alt="dice" draggable="true">
+                <br>
+            </span>
+            <div id="dropzone">
+                Drag and drop your die here to roll
+            </div>
+            <span id="wrap_opponent_roll">
+                <img id="opponent_roll" src="images/die6.png" alt="dice">
+                <br>
+                Opponent's die
+            </span>
+        </div>
+        <div id="gameboard">
+        </div>
+        <div id="rules">
+            <article>
+                <strong>Rules:</strong>
+                The goal is to be the first player to reach the final tile.
+                To win, a player must land on final tile exactly — if the rolled number would take the pawn beyond goal, the player moves back the value exceeding the goal.
+                On each turn, the pawn moves forward by the number rolled.
+                There are several red special tiles which bend the game flow.
+            </article>
+            <article id="specialTilesDescription">
+                <span id="special_tile_5">Tile 5: The little goose runs away from the fox and moves forward to tile 8.</span>
+                <span id="special_tile_9">Tile 9: The little goose is caught and must wait until the player rolls a 6.</span>
+                <span id="special_tile_13">Tile 13: Thanks to the hedgehog, the little goose wins the race and advances to tile 16.</span>
+                <span id="special_tile_15">Tile 15: A lost feather is being searched for. The player skips one turn.</span>
+                <span id="special_tile_18">Tile 18: Flying goes faster, so the player gets to roll again.</span>
+                <span id="special_tile_24">Tile 24: The little goose caught a cold and must stay in bed for one round.</span>
+                <span id="special_tile_30">Tile 30: The little goose takes a ladybug along, which hurries to tile 34.</span>
+                <span id="special_tile_33">Tile 33: The little goose puts on roller skates and zooms ahead to tile 38.</span>
+                <span id="special_tile_36">Tile 36: Whoever ate a lot must rest and therefore sleeps for two rounds.</span>
+                <span id="special_tile_40">Tile 40: The little goose hurt its leg and must recover one round.</span>
+                <span id="special_tile_45">Tile 45: The little goose flies faster in a balloon and goes all the way to tile 50.</span>
+                <span id="special_tile_49">Tile 49: Your little goose has won the Miss-Goose title and as a reward gets to roll again.</span>
+                <span id="special_tile_52">Tile 52: The little goose got lost and must go back to tile 43.</span>
+                <span id="special_tile_57">Tile 57: The little goose gets so lost in thought that it forgets where to go and must skip two turns.</span>
+                <span id="special_tile_60">Tile 60: Whoever lands exactly on tile 60 first, wins.</span>
+            </article>
+        </div>
+    </section>

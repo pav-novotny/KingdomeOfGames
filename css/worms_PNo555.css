@@ -1,0 +1,51 @@
+div#gameboard > table {
+    flex: 1 1 100%;
+    border: 1px solid black;
+    background-image: url(../images/Zizaly.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+div#gameboard > table tr{
+    height: 10%;
+}
+
+div#gameboard > table td{
+    width: 10%;
+}
+
+div#gameboard > table td > span{
+    display: flex;
+    justify-content:center;
+}
+
+div#gameboard > table td > span > *{
+    flex-basis: 40%;
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 0;
+    min-width: 0;    
+}
+
+#navigation {
+    margin-bottom: 10px;
+}
+
+body {
+    padding-top: 5px;
+}
+
+#rules > article{
+    padding: 10px 20px 20px 20px;
+    text-align: justify;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+#rules > article > strong {
+    padding: 0px 0px 5px 0px;
+    display: block;
+    text-align: center;
+}

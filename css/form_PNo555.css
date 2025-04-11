@@ -1,0 +1,41 @@
+section#formSection{
+    display: flex;
+}
+
+section > form {
+    flex-basis: 45%;
+}
+
+section > article{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid antiquewhite;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+
+fieldset {
+    margin: 5px;
+    border: 1px solid antiquewhite;
+}
+
+fieldset > div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+fieldset > div > *{
+    flex-basis: 48%;
+    padding: 5px;
+    margin: 5px;
+}
+
+#formExplain {
+    text-align: center;
+}

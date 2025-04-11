@@ -1,0 +1,105 @@
+section#game_section {
+    display: flex;
+}
+
+div#gameboard {
+
+    flex-basis: 70%;
+    height: 800px;
+    max-height: 90vh;
+    min-height: 0;
+    min-width: 0;
+}
+
+div#actions, div#rules {
+    flex-basis: 15%;
+}
+
+#actions {
+    position: relative;
+}
+
+#restart {
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    background-color: rgb(214, 199, 199);
+}
+
+#restart:hover{
+    background: linear-gradient(to right, rgb(221, 221, 10), rgb(218, 10, 10));
+}
+
+
+#actions > button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#actions > span {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+#player_roll, #opponent_roll {
+    width: 75px;
+    height: 75px;
+    display: block;
+    
+}
+
+#wrap_player_roll{
+    top: 65%;
+}
+
+#wrap_opponent_roll{
+    top: 15%;
+    filter: contrast(40%);
+}
+
+@keyframes scale {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+
+@keyframes spin {
+   0% {transform: rotate(0deg);}
+   100% {transform: rotate(720deg);}
+
+}
+
+@keyframes rolling {
+    0% {transform: translateY(0);}
+    5% {transform: translateY(-89px);}
+    100% {transform: translateY(-90px);}
+
+}
+
+#player_roll:hover {
+    animation: scale 1s linear infinite;
+}
+
+.spin {
+    animation: spin 4s linear
+}
+
+.moveup {
+    animation: rolling 4s linear;
+}
+
+#dropzone {
+    position: absolute;
+    top: 40%;
+    height: 28%;
+    width: 98%;
+    border: 1px solid red;
+    text-align: center;
+    padding: 45% 2px 2px 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
